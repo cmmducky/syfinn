@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head-width, initial-scale=1.0"><head>
+  <title>SyFinn | Web Development</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-br from-purple-600 via-pink-500 to-yellow-400 text-white">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 backdrop-blur-md">
+    <div class="flex items-center gap-3">
+      <img src="logo.png" alt="SyFinn Logo" class="h-40 w-80 rounded-full bg-white p-1 shadow-lg">
+      <h1 class="text-2xl font-extrabold">SyFinn</h1>
+    </div>
+    <a href="#contact">
+      <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200">
+        Contact
+      </button>
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="text-center py-24 px-6">
+    <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+      Build. Launch. Grow.
+    </h2>
+    <p class="text-lg max-w-2xl mx-auto">
+      SyFinn builds high-performance, eye-catching websites that convert visitors into customers.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section class="py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Services</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">Custom Web Development</h4>
+        <p>Fully customized, responsive websites built for your brand.</p>
+      </div>
+
+      <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">UI/UX Design</h4>
+        <p>Clean, modern designs built to maximize conversions.</p>
+      </div>
+
+      <div class="bg-white text-black p-6 rounded-2xl shadow-xl hover:scale-105 transition">
+        <h4 class="font-bold text-xl mb-2">SEO Optimization</h4>
+        <p>Rank higher on Google and drive organic traffic.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="py-16 px-6">
+    <h3 class="text-3xl font-bold text-center mb-10">Pricing</h3>
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="bg-black text-white p-6 rounded-2xl shadow-xl text-center hover:scale-105 transition">
+        <h4 class="text-xl font-bold">Simple Website</h4>
+        <p class="text-3xl font-extrabold my-4">$30-$100</p>
+        <p>1-page site • Mobile responsive • Fast launch</p>
+      </div>
+
+      <div class="bg-black text-white p-6 rounded-2xl shadow-xl text-center hover:scale-105 transition">
+        <h4 class="text-xl font-bold">Debugging</h4>
+        <p class="text-3xl font-extrabold my-4">$50</p>
+        <p>Up to 5 pages • Custom design • SEO ready</p>
+      </div>
+
+      <div class="bg-black text-white p-6 rounded-2xl shadow-xl text-center hover:scale-105 transition">
+        <h4 class="text-xl font-bold">Full Multi-page Site</h4>
+        <p class="text-3xl font-extrabold my-4">$200</p>
+        <p>Full custom build • Advanced features • Ongoing support</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Recent Work</h3>
+    <p>(Add your projects here — screenshots, links, demos)</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Get In Touch</h3>
+
+    <p class="mb-2">
+      📞 <a href="tel:3048819981" class="underline">304-881-9981</a>
+    </p>
+
+    <p class="mb-8">
+      📧 <a href="mailto:carteranddestineemorton@gmail.com" class="underline">
+        carteranddestineemorton@gmail.com
+      </a>
+    </p>
+
+    <form onsubmit="sendEmail(event)" class="max-w-xl mx-auto grid gap-4">
+  <input type="text" id="name" placeholder="Your Name" required class="p-3 rounded text-black">
+
+  <input type="email" id="email" placeholder="Your Email" required class="p-3 rounded text-black">
+
+  <textarea id="message" placeholder="Your Message" required class="p-3 rounded text-black h-32"></textarea>
+
+  <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200">
+    Send Message
+  </button>
+</form>
+    >
+     
+
+  <!-- Footer -->
+  <footer class="text-center p-6 bg-black text-white">
+    <p>© <script>document.write(new Date().getFullYear())</script> SyFinn. Built to impress.</p>
+  </footer>
+
+<script>
+function sendEmail(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const message = document.getElementById("message").value;
+
+  const subject = `New message from ${name}`;
+  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${message}`;
+
+  window.location.href = `mailto:carteranddestineemorton@gmail.com?subject=${subject}&body=${body}`;
+}
+</script></body>
+</html>
+  <meta charset="UTF-8">
