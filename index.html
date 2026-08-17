@@ -10,20 +10,26 @@
 <body class="bg-gradient-to-br from-purple-600 via-pink-500 to-yellow-400 text-white">
 
   <!-- Header -->
-  <header class="sticky top-0 z-30 bg-white/5 backdrop-blur-md p-4 sm:p-6">
+  <header class="sticky top-0 z-30">
     <div class="max-w-4xl mx-auto px-4">
-      <div class="flex flex-col md:flex-row items-center md:justify-between gap-3 w-full">
-        <div class="flex flex-col items-center md:items-start">
-          <!-- logo 200x200 -->
-          <img src="logo.png" alt="SyFinn logo - Sy Finn" class="w-80 h-80">
+      <div class="flex items-center justify-between py-4">
+        <div class="flex items-center gap-3">
+          <!-- left side (optional site title) -->
         </div>
 
-        <!-- Contact button: full width on mobile, auto on md+ -->
-        <a href="#contact" class="w-full md:w-auto mt-3 md:mt-0 md:ml-4" aria-label="Jump to contact section">
-          <button class="w-full md:w-auto bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white/80 transition">
-            Contact
-          </button>
-        </a>
+        <!-- Contact button with logo box positioned right below it (small boxed area) -->
+        <div class="relative">
+          <a href="#contact" class="md:ml-4" aria-label="Jump to contact section">
+            <button class="bg-white text-black px-6 py-2 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-white/80 transition">
+              Contact
+            </button>
+          </a>
+
+          <!-- logo box placed under the button only (background on this small box) -->
+          <div class="absolute right-0 top-full mt-2 inline-flex items-center justify-center bg-white/5 backdrop-blur-md px-3 py-2 rounded-xl z-40">
+            <img src="logo.png" alt="SyFinn logo - Sy Finn" class="w-80 h-80">
+          </div>
+        </div>
       </div>
     </div>
   </header>
