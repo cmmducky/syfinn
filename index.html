@@ -11,14 +11,17 @@
 
   <!-- Header -->
   <header class="relative p-6 backdrop-blur-md">
-    <div class="flex flex-col items-center gap-3 w-full">
-      <img src="logo.png" alt="SyFinn Logo" class="h-56 w-56 shadow-lg mx-auto">
+    <div class="flex flex-col md:flex-row items-center md:justify-between gap-3 w-full">
+      <div class="flex flex-col items-center">
+        <!-- logo 80x80 -->
+        <img src="logo.png" alt="SyFinn Logo" class="h-20 w-20 shadow-lg mx-auto">
+      </div>
+      <a href="#contact" class="mt-3 md:mt-0">
+        <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200">
+          Contact
+        </button>
+      </a>
     </div>
-    <a href="#contact" class="absolute right-6 top-1/2 transform -translate-y-1/2">
-      <button class="bg-white text-black px-4 py-2 rounded hover:bg-gray-200">
-        Contact
-      </button>
-    </a>
   </header>
 
   <!-- Hero -->
